@@ -16,6 +16,7 @@ const Contacts = () => {
         justifyContent="space-between"
         alignItems="center"
         sx={{ position: "relative" }}
+        height="150px"
       >
         <Header
           title="TEACHERS"
@@ -28,7 +29,7 @@ const Contacts = () => {
               color: "white",
               height: "50px",
               borderRadius: "10px",
-              fontSize: "20px",
+              fontSize: "16px",
               fontWeight: "bold",
               position: "absolute",
               bottom: "20px",

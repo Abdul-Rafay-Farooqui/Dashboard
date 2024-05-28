@@ -30,7 +30,13 @@ function LoginPage() {
           }}
           onSubmit={handleSubmit} // Call handleSubmit function on form submit
         >
-          <Typography variant="h5" textAlign="center" p="2rem 1rem 0 1rem">
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            textAlign="center"
+            color={"#fff"}
+            p="2rem 1rem 0 1rem"
+          >
             Welcome to STEDA
           </Typography>
           <Typography
@@ -38,25 +44,37 @@ function LoginPage() {
             color="green"
             textAlign="center"
             p="0 1rem 1rem 1rem"
+            fontWeight="bold"
           >
             Login to dashboard
           </Typography>
-          <Typography fontSize="17px" paddingLeft="1.5rem" paddingTop="1rem">
+          <Typography
+            fontSize="17px"
+            fontWeight="bold"
+            paddingLeft="1.5rem"
+            paddingTop="1rem"
+            color={"#fff"}
+          >
             Email or Username
           </Typography>
           <TextField
             type="text"
-            label="Username"
+            label="admin@gmail.com"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             sx={{ width: "85%", mx: "1.5rem", pb: "1rem" }}
           />
-          <Typography fontSize="17px" paddingLeft="1.5rem">
+          <Typography
+            fontSize="17px"
+            fontWeight="bold"
+            paddingLeft="1.5rem"
+            color={"#fff"}
+          >
             Password
           </Typography>
           <TextField
             type="password"
-            label="Password"
+            label="123456"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             sx={{ width: "85%", mx: "1.5rem" }}
@@ -66,7 +84,7 @@ function LoginPage() {
             type="submit" // Use type="submit" to trigger form submission
             variant="contained"
             color="primary"
-            sx={{ width: "80%", m: "2rem 2rem 0 2rem" }}
+            sx={{ width: "80%", m: "2rem 2rem 0 2rem", fontWeight: "bold" }}
           >
             Login
           </Button>
@@ -77,12 +95,18 @@ function LoginPage() {
               marginRight: "35%",
               width: "450px",
               color: "blue",
+              fontWeight: "bold",
             }}
             to="/"
           >
             Forget Password?
           </Link>
-          <Typography textAlign="center" p="1rem">
+          <Typography
+            textAlign="center"
+            p="1rem"
+            fontWeight="bold"
+            color={"#fff"}
+          >
             Dont have Account?
             <Link style={{ textDecoration: "none", color: "blue" }} to="/">
               Create Account

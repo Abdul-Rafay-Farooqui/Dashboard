@@ -29,134 +29,120 @@ const Dashboard = () => {
       >
         {/* ROW 1 */}
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="90000"
             subtitle="Resgisterd Teachers"
-            progress="0.75"
-            increase="+75%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="30000"
             subtitle="HST"
-            progress="0.50"
-            increase="+21%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="40000"
             subtitle="PSTs"
-            progress="0.60"
-            increase="+40%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="10000"
             subtitle="Subject Specialist"
-            progress="0.20"
-            increase="+10%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="5000"
             subtitle="OT"
-            progress="0.10"
-            increase="+8%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="5000"
             subtitle="DT"
-            progress="0.10"
-            increase="+8%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
         </Box>
         <Box
+          className="dashboard-cards"
           gridColumn="span 3"
-          backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
+          bgcolor={colors.primary[400]}
+          borderRadius={3}
+          pt={3}
         >
           <StatBox
             title="15000"
             subtitle="Non Registered Teachers"
-            progress="0.25"
-            increase="+%"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+                sx={{ color: colors.grey[100], fontSize: "26px" }}
               />
             }
           />
