@@ -59,7 +59,7 @@ function LoginPage() {
           </Typography>
           <TextField
             type="text"
-            label="admin@gmail.com"
+            label="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             sx={{ width: "85%", mx: "1.5rem", pb: "1rem" }}
@@ -74,7 +74,7 @@ function LoginPage() {
           </Typography>
           <TextField
             type="password"
-            label="123456"
+            label="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             sx={{ width: "85%", mx: "1.5rem" }}

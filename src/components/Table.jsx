@@ -6,18 +6,19 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
+import TableHead from "@mui/material/TableHead";
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme.js";
 
 const columns = [
-  { id: "teacherId", label: "ID", minWidth: 90 },
-  { id: "teacherName", label: "Name", minWidth: 90 },
-  { id: "teacherCNIC", label: "CNIC", minWidth: 90 },
-  { id: "teacherDesignation", label: "Designation", minWidth: 90 },
-  { id: "placeOfPosting", label: "Posting", minWidth: 90 },
-  { id: "dateOfAppointment", label: "Appointment", minWidth: 90 },
-  { id: "dateOfBirth", label: "Birth", minWidth: 90 },
-  { id: "sex", label: "Sex", minWidth: 90 },
+  { id: "teacherId", label: "ID", minWidth: 2 },
+  { id: "teacherName", label: "Name", minWidth: 200 },
+  { id: "teacherCNIC", label: "CNIC", minWidth: 400 },
+  { id: "teacherDesignation", label: "Designation", minWidth: 100 },
+  { id: "placeOfPosting", label: "Posting", minWidth: 500 },
+  { id: "dateOfAppointment", label: "Appointment", minWidth: 100 },
+  { id: "dateOfBirth", label: "Birth", minWidth: 100 },
+  { id: "sex", label: "Sex", minWidth: 100 },
   { id: "qualification", label: "Qualification", minWidth: 90 },
   { id: "experiences", label: "Experiences", minWidth: 90 },
 ];
@@ -140,22 +141,19 @@ export function TeacherTable() {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Paper
-      sx={{
-        width: "100%",
-        overflow: "hidden",
-        backgroundColor: `${colors.primary[400]}`,
-      }}
-    >
-      <TableContainer sx={{ maxHeight: 440 }}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableBody>
+    <>
+      <TableContainer
+        component={Paper}
+        style={{ overflowX: "auto", backgroundColor: `${colors.primary[400]}` }}
+      >
+        <Table>
+          <TableHead sx={{ position: "sticky", top: -10 }}>
             {columns.map((column) => (
               <TableCell
                 key={column.id}
                 align={column.align}
                 style={{
-                  minWidth: column.minWidth,
+                  width: column.minWidth,
                   fontSize: "16px",
                   fontWeight: "bold",
                 }}
@@ -163,6 +161,8 @@ export function TeacherTable() {
                 {column.label}
               </TableCell>
             ))}
+          </TableHead>
+          <TableBody>
             {rows.map((row) => {
               return (
                 <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
@@ -191,6 +191,7 @@ export function TeacherTable() {
         component="div"
         count={rows.length}
       />
-    </Paper>
+    </>
+    // </Paper>
   );
 }

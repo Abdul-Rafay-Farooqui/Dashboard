@@ -40,7 +40,7 @@ const Contacts = () => {
           </Button>
         </Link>
       </Box>
-      <Box m="40px 0 0 0" height="75vh">
+      <Box m="40px 0 0 0">
         <TeacherTable />
       </Box>
     </Box>
