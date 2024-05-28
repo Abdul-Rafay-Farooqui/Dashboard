@@ -32,8 +32,8 @@ const Contacts = () => {
               fontSize: "16px",
               fontWeight: "bold",
               position: "absolute",
-              bottom: "20px",
-              right: "20px",
+              bottom: { xs: "5px", md: "20px" },
+              right: { xs: "5px", md: "20px" },
             }}
           >
             Add Teacher

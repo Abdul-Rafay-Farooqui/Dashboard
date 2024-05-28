@@ -30,7 +30,7 @@ const Dashboard = () => {
         {/* ROW 1 */}
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -47,7 +47,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -64,7 +64,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -81,7 +81,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -98,7 +98,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -115,7 +115,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -132,7 +132,7 @@ const Dashboard = () => {
         </Box>
         <Box
           className="dashboard-cards"
-          gridColumn="span 3"
+          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
