@@ -15,29 +15,25 @@ body,
   height: 100vh;
 }
 
-.banner-background{
-  background-image: url("./assets/modal.jpg");
-  background-position: center;
-  background-size: cover;
-}
 
-.center-div-container{
+
+.div-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 0;
+  height: 100vh;
 }
 
-.banner{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.logo{
+  margin: 250px 100px 0 200px;
 }
 
 .frosted{
   background-color: rgba(255, 255, 255, .2);  
-  backdrop-filter: blur(25px);
   box-shadow: 0 0 20px rgba(0, 0, 0, .5);
   border-radius: 25px;
+  margin: 2rem;
+  justify-content: right;
+  align-items: right;
 }
 
 .dashboard-card{
@@ -45,4 +41,58 @@ body,
   align-items: center;
   justify-content: center;
   border-radius: 25px !important;
+}
+.FP-logo{
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;  text-decoration: none;
+  font-size: 17px;
+  color: blue;
+  font-weight: bold;
+}
+.login-icons{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: blue;
+  padding-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.form-login{
+  height: 80%;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 0 0;
+  }
+  .img-logo{
+    width: 395px;
+    height: 100px;
+  }
+  .div-container{
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .form-login{
+    height: 90vh;
+  }
+  .frosted{
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 450px){
+  .img-logo{
+    width: 300px;
+    height: 80px;
+  }
+  .form-login{
+    height: 75vh;
+  }
 }

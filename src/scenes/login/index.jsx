@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import banner from "../../assets/modal.jpg";
-
+import GoogleIcon from "@mui/icons-material/Google";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
 function LoginPage() {
   const navigation = useNavigate(); // Using useHistory instead of useNavigate
   const [username, setUsername] = useState("");
@@ -21,20 +22,24 @@ function LoginPage() {
   };
 
   return (
-    <Box className="center-div-container banner-background" height="100vh">
+    <Box className="div-container">
+      <Box className="logo">
+        <img
+          className="img-logo"
+          src={require("../../assets/logo.jpeg")}
+          alt="Missig"
+        />
+      </Box>
       <Box className="frosted" maxWidth="450px">
         <form
-          style={{
-            height: "80%",
-            width: "100%",
-          }}
+          className="form-login"
           onSubmit={handleSubmit} // Call handleSubmit function on form submit
         >
           <Typography
             variant="h5"
             fontWeight="bold"
             textAlign="center"
-            color={"#fff"}
+            color={"#242424"}
             p="2rem 1rem 0 1rem"
           >
             Welcome to STEDA
@@ -53,7 +58,7 @@ function LoginPage() {
             fontWeight="bold"
             paddingLeft="1.5rem"
             paddingTop="1rem"
-            color={"#fff"}
+            color={"#242424"}
           >
             Email or Username
           </Typography>
@@ -68,7 +73,7 @@ function LoginPage() {
             fontSize="17px"
             fontWeight="bold"
             paddingLeft="1.5rem"
-            color={"#fff"}
+            color={"#242424"}
           >
             Password
           </Typography>
@@ -88,30 +93,28 @@ function LoginPage() {
           >
             Login
           </Button>
-          <Link
-            style={{
-              textDecoration: "none",
-              marginLeft: "35%",
-              marginRight: "35%",
-              width: "450px",
-              color: "blue",
-              fontWeight: "bold",
-            }}
-            to="/"
-          >
+          <Link className="FP-logo" to="/">
             Forget Password?
           </Link>
           <Typography
             textAlign="center"
             p="1rem"
             fontWeight="bold"
-            color={"#fff"}
+            color={"#242424"}
           >
             Dont have Account?
             <Link style={{ textDecoration: "none", color: "blue" }} to="/">
               Create Account
             </Link>
           </Typography>
+          <Link className="login-icons" to="/">
+            <Typography color="#242424" fontWeight="bold" marginRight="1rem">
+              Sign Up Using
+            </Typography>
+            <GoogleIcon sx={{ fontSize: "30px", marginRight: "1rem" }} />
+            <FacebookIcon sx={{ fontSize: "30px", marginRight: "1rem" }} />
+            <TwitterIcon sx={{ fontSize: "30px" }} />
+          </Link>
         </form>
       </Box>
     </Box>
