@@ -30,7 +30,7 @@ const Dashboard = () => {
         {/* ROW 1 */}
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -40,14 +40,17 @@ const Dashboard = () => {
             subtitle="Resgisterd Teachers"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -57,14 +60,17 @@ const Dashboard = () => {
             subtitle="HST"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -74,14 +80,17 @@ const Dashboard = () => {
             subtitle="PSTs"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -91,14 +100,17 @@ const Dashboard = () => {
             subtitle="Subject Specialist"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -108,14 +120,17 @@ const Dashboard = () => {
             subtitle="OT"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -125,14 +140,17 @@ const Dashboard = () => {
             subtitle="DT"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
         </Box>
         <Box
           className="dashboard-cards"
-          sx={{ gridColumn: { xs: "span 7", md: "span 3" } }}
+          sx={{ gridColumn: { xs: "span 5", md: "span 3" } }}
           bgcolor={colors.primary[400]}
           borderRadius={3}
           pt={3}
@@ -142,7 +160,10 @@ const Dashboard = () => {
             subtitle="Non Registered Teachers"
             icon={
               <ContactsOutlinedIcon
-                sx={{ color: colors.grey[100], fontSize: "26px" }}
+                sx={{
+                  color: colors.grey[100],
+                  fontSize: { xs: "20px", lg: "26px" },
+                }}
               />
             }
           />
